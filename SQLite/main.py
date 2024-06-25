@@ -8,7 +8,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 
 app = Flask(__name__)
 app.secret_key = "gobbledygook"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///books.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///books.db"  #need cosmosdb connection string
 bootstrap = Bootstrap5(app)
 # all_books = []
 
